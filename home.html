@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Waterloo Sick Kids Garage Sale</title>
+</head>
+<body>
+    <div id="checkoutForm">
+        <h1> Waterloo SickKids Garage Sale</h1>
+        <h2> Help raise money for a good cause</h2>
+        <form id="userForm">
+            <div id="userInfo">
+                <label for="userName">Name</label>
+                <input type="text" id="name" placeholder="First & Last" required>
+            </div>
+            <div id="userInfo">
+                <label for="userEmail">Email</label>
+                <input type="email" id="email" placeholder="email@gmail.com" required>
+            </div>
+            <div id="userInfo">
+                <label for="creditCardNumber">Credit Card Number</label>
+                <input type="text" id="creditCardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" required pattern="\d{4}-\d{4}-\d{4}-\d{4}">
+            </div>
+            <div id="userInfo">
+                <label for="expiryMonth">Credit Card Expiry Month</label>
+                <input type="text" id="expiryMonth" placeholder="MMM" required pattern="[A-Za-z]{3}">
+            </div>
+            <div id="userInfo">
+                <label for="expiryYear">Credit Card Expiry Year</label>
+                <input type="text" id="expiryYear" placeholder="yyyy" required pattern="\d{4}">
+            </div>
+
+            <h3>Buy Generously</h3>
+            <div id="productInfo">
+                <label for="product">Baseball Cards ($5)</label>
+                <input type="text" class="productInput" placeholder="Enter Amount">
+            </div>
+            <div id="productInfo">
+                <label for="product">Hockey Cards ($10)</label>
+                <input type="text" class="productInput" placeholder="Enter Amount">
+            </div>
+            <div id="productInfo">
+                <label for="product">Football Cards ($15)</label>
+                <input type="text" class="productInput" placeholder="Enter Amount">
+            </div>
+            <div id="productInfo">
+                <label for="product">Sports Hat ($20)</label>
+                <input type="text" class="productInput" placeholder="Enter Amount">
+            </div>
+            <div id="productInfo">
+                <label for="product">Sports Jersey ($25)</label>
+                <input type="text" class="productInput" placeholder="Enter Amount">
+            </div>
+            <div id="errorMessage" class="errorMessage"></div>
+            <div id="productInfo">
+                <button type="submit">Checkout</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

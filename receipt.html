@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Receipt</title>
+</head>
+<body>
+    <div>
+        <h1> Waterloo SickKids Garage Sale</h1>
+        <h2> Help raise money for a good cause</h2>
+        <div id="receiptContent">
+            <!--here is where the receipt content will be inserted-->
+        </div>
+    </div>
+        
+    <script>
+        // get receipt content from the URL parameter(URLSearchParams)
+        var urlParams = new URLSearchParams(window.location.search);
+        var receiptContent = urlParams.get('content');
+        // show the receipt content
+        document.getElementById('receiptContent').innerHTML = receiptContent;
+    </script>
+</body>
+</html>
